@@ -1,3 +1,28 @@
-<footer class="footer webp">
-  <h2 class="footer__h2">footer</h2>
+<footer class="footer">
+  <div class="container">
+    <div class="footer__content">
+      <h2 class="footer__title title-h2">Contacts</h2>
+      <div class="footer__contacts">
+        @include('address.html', {})
+        <!-- <dl class="footer__hours"> -->
+        <div class="footer__item footer__item--width">
+          <dt>Office hours:</dt>
+          <dd>Mon–Sat from 9:00 to 19:00<br>
+            In touch with clients 24/7</dd>
+        </div>
+        </dl>
+      </div>
+
+      <div class="footer__bottom">
+        <div class="footer__logo">
+          <a class="footer__logo-link logo" href="">
+            <svg class="icon icon--logo-footer">
+              <use href="./images/svgsprite/sprite.symbol.svg#logo"></use>
+            </svg>
+          </a>
+        </div>
+        <button class="footer__btn btn">Order a consultation</button>
+      </div>
+    </div>
+  </div>
 </footer>

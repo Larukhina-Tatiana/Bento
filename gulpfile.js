@@ -23,7 +23,7 @@ import { scss } from "./gulp/tasks/scss.js";
 import { js } from "./gulp/tasks/js.js";
 import { imgAvif, imgWebp, imgImage } from "./gulp/tasks/images.js";
 // import { svgStack, svgSymbol } from "./gulp/tasks/svg.js";
-// import { OtfToTtf, ttfToWoff, fontStyle } from "./gulp/tasks/fonts.js";
+import { OtfToTtf, ttfToWoff, fontStyle } from "./gulp/tasks/fonts.js";
 
 // Импорт плагинов
 import { plugins } from "./gulp/config/plugins.js";
@@ -38,9 +38,11 @@ function watcher() {
 }
 // Последовательная обработка шрифтов
 const images = gulp.series(imgAvif, imgWebp, imgImage);
+// const fonts = gulp.series(OtfToTtf, ttfToWoff, fontStyle);
 // const sprite = gulp.series(svgStack, svgSymbol);
 // Основные задачи
 const mainTasks = gulp.series(
+  // fonts,
   gulp.parallel(copy, copysprite, copyfonts, html, scss, js, images)
 );
 // Построение сценариев

@@ -1,10 +1,49 @@
 .header {
-	background-color: rgb(195, 220, 231);
 	padding: 50px 0;
 
 	&__row {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		flex-wrap: wrap;
+	}
+
+	&__btn {
+		margin-right: 162px;
+		margin-left: auto;
+	}
+
+	@media screen and (width <=1200px) {
+		&__btn {
+			margin-right: auto;
+		}
+	}
+
+	@media screen and (width <=890px) {
+		&__row {
+			justify-content: flex-end;
+			gap: 20px;
+		}
+
+		&__logo {
+			margin-right: auto;
+			order: -1;
+		}
+
+		&__btn {
+			margin-right: 0;
+			margin-left: 172px;
+		}
+
+
+		&__mobile-nav-btn {
+			order: -1;
+		}
+	}
+
+	@media screen and (width <=582px) {
+		&__btn {
+			margin: 0 auto;
+		}
 	}
 }

@@ -17,7 +17,7 @@ export const js = () => {
           mode: app.isBulid ? "production" : "development",
           entry: {
             index: "./src/js/index.js",
-            about: "./src/js/about.js",
+            // about: "./src/js/about.js",
           },
           output: {
             filename: "[name].bundle.js",

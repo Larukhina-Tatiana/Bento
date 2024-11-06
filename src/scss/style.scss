@@ -1,5 +1,5 @@
 @import "./utils/modern-normalize.min";
-@import "./../fonts/fonts";
+@import "./utils/fonts";
 @import "./utils/vars";
 @import "./utils/global";
 @import "./utils/icons";
@@ -7,15 +7,5 @@
 @import "./utils/container";
 @import "./utils/sticky-footer";
 
-// @import "./blocks/*.scss";
+@import "./blocks/*.scss";
 @import "./components/**/*.scss";
-
-body {
-  font-family: Circe, sans-serif;
-  font-weight: 700;
-}
-
-.text {
-  font-family: Lato;
-  font-weight: 900;
-}

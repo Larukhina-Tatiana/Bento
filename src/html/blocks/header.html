@@ -1,11 +1,18 @@
 <header class="header">
     <div class="container">
         <div class="header__row">
-            <div class="logo">Logo</div>
-            <button class="mobile-nav-btn">
-                <div class="nav-icon"></div>
+            <div class="header__logo">
+                <a class="header__logo-link logo" href="">
+                    <svg class="icon icon--logo-header">
+                        <use href="./images/svgsprite/sprite.symbol.svg#logo"></use>
+                    </svg>
+                </a>
+            </div>
+            <button class="header__btn btn">Order a consultation</button>
+            <button class="header__mobile-nav-btn mobile-nav-btn">
+                <span class="nav-icon"></span>
             </button>
         </div>
     </div>
 </header>
-@include('blocks/mobile-nav.html')
+<!-- @include('./mobile-nav.html') -->
