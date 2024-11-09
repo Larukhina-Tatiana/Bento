@@ -3,11 +3,25 @@
   margin-left: auto;
   padding-right: var(--container-padding);
   padding-left: var(--container-padding);
-  outline: 1px solid brown;
-  // background-color: green;
+  // outline: 1px solid brown;
   max-width: var(--container-width);
   width: 100%;
-  // max-width: calc(1290px + 30px);
+
+  &--hero {
+
+    @media screen and (width <=1240px) {
+      max-width: 1000px;
+    }
+
+    @media screen and (width <=1020px) {
+      max-width: 768px;
+    }
+
+    // @media screen and (width <=770px) {
+    //   max-width: 414px;
+    // }
+
+  }
 }
 
 /* Контейнеры */

@@ -1,0 +1,31 @@
+.list-desck {
+  font-weight: 700;
+  text-align: center;
+
+
+  &__item {
+    background: var(--light-caramel);
+    border-radius: var(--border-radius);
+    padding: 16px 38px;
+    // width: 33.3333%;
+    flex-basis: calc((100% - 40px) /3);
+  }
+
+  &__num {
+    // font-size: 96px;
+    font-size: clamp(2.5rem, 1.227rem + 6.36vw, 6rem);
+
+  }
+
+  &__text {
+    // font-size: 20px; 18
+    font-size: clamp(1.125rem, 1.08rem + 0.23vw, 1.25rem);
+    text-transform: uppercase;
+  }
+
+  @media screen and (width <=920px) {
+    &__item {
+      width: 100%;
+    }
+  }
+}

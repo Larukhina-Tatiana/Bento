@@ -1,0 +1,15 @@
+.statistics {
+  margin-bottom: 52px;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+  }
+
+  @media screen and (width <=920px) {
+    &__list {
+      flex-direction: column;
+    }
+  }
+}

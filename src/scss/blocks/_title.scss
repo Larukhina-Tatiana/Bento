@@ -5,14 +5,20 @@
   font-size: clamp(2rem, 1.818rem + 0.91vw, 2.5rem);
 }
 
-// .title-h3 {
-//   font-weight: 600;
-//   // font-size: 32px;
-//   font-size: clamp(1.125rem, 0.95rem + 0.88vw, 2rem);
-//   letter-spacing: 0.03em;
-//   text-align: center;
-//   color: $white;
-// }
+.title-h3 {
+  font-weight: 700;
+  // font-size: 20px; с 1440 до 1240 20 1240-18
+  font-size: clamp(1.125rem, 0.35rem + 1vw, 1.25rem);
+  text-transform: uppercase;
+
+  &--black {
+    color: var(--black);
+  }
+
+  &--white {
+    color: var(--white);
+  }
+}
 
 // .title-h4 {
 //   font-weight: 600;

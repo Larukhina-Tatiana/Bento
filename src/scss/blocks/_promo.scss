@@ -1,0 +1,79 @@
+.promo {
+  color: var(--white);
+  text-align: center;
+  grid-column: 1/2;
+  grid-row: 2/3;
+  background-image:
+    -webkit-image-set(url(../images/hero/promo/promo-bg1@1x.png) 1x,
+      url(../images/hero/promo/promo-bg1@2x.png) 2x,
+      url(../images/hero/promo/promo-bg1@3x.png) 3x,
+      url(../images/hero/promo/promo-bg1@3x.png) 4x);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: var(--border-radius);
+
+
+  &__text {
+    max-width: 175px;
+    margin: 0 auto 15px;
+
+    @media screen and (width >=768px) and (width <=1240px) {
+      margin-bottom: 10px;
+    }
+
+    span {
+      display: block;
+    }
+  }
+
+  &__btn {
+    margin: 0 auto 30px;
+    padding: 13px 37px;
+  }
+
+
+  &__title {
+    margin-bottom: 15px;
+
+    @media screen and (width >=768px) and (width <=1240px) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__img {
+    border-radius: var(--border-radius);
+    margin: 0 auto 15px;
+  }
+
+  @media screen and (width <=1240px) {
+    background-position: bottom;
+
+    &__img {
+      max-width: 70%;
+      margin-bottom: 10px;
+    }
+
+    &__btn {
+      margin-bottom: 20px;
+    }
+  }
+
+  @media screen and (width <=1020px) {
+
+    &__img {
+      max-width: 70%;
+
+    }
+
+    &__btn {
+      margin-bottom: 10px;
+      padding: 13px 25px;
+    }
+  }
+
+  @media screen and (width <=768px) {
+    background-image: none;
+    background-color: var(--brown);
+
+  }
+}

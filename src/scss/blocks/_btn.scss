@@ -6,13 +6,21 @@
   padding: 18px clamp(2.25rem, 0.265rem + 9.92vw, 3.875rem);
   // height: 60px;
   border-radius: var(--border-radius);
-  background: var(--white);
-  transition: background-color 0.2s ease-in, color 0.2s ease-in;
+
   font-weight: 700;
   // font-size: 20px;
   font-size: clamp(1rem, 0.695rem + 1.53vw, 1.25rem);
   text-transform: uppercase;
-  color: var(--black);
+
+  &--black {
+    background: var(--black);
+    color: var(--white);
+  }
+
+  &--white {
+    background-color: var(--white);
+    color: var(--black);
+  }
 
   // {
   // .button:hover, .button:focus

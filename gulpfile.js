@@ -14,6 +14,7 @@ global.app = {
 
 // Импорт задач
 import { copysprite } from "./gulp/tasks/copysprite.js";
+import { copyicons } from "./gulp/tasks/copyicons.js";
 import { copyfonts } from "./gulp/tasks/copyfonts.js";
 import { copy } from "./gulp/tasks/copy.js";
 import { reset } from "./gulp/tasks/reset.js";
@@ -29,7 +30,7 @@ import { OtfToTtf, ttfToWoff, fontStyle } from "./gulp/tasks/fonts.js";
 import { plugins } from "./gulp/config/plugins.js";
 
 function watcher() {
-  gulp.watch(path.watch.files, copy);
+  gulp.watch(path.watch.files, copy, copyicons);
   gulp.watch(path.watch.html, html);
   gulp.watch(path.watch.scss, scss);
   gulp.watch(path.watch.js, js);
@@ -43,7 +44,7 @@ const images = gulp.series(imgAvif, imgWebp, imgImage);
 // Основные задачи
 const mainTasks = gulp.series(
   // fonts,
-  gulp.parallel(copy, copysprite, copyfonts, html, scss, js, images)
+  gulp.parallel(copy, copyicons, copysprite, copyfonts, html, scss, js, images)
 );
 // Построение сценариев
 const dev = gulp.series(reset, mainTasks, gulp.parallel(watcher, server));
