@@ -7,29 +7,29 @@
 .icon {
 	fill: transparent;
 	stroke: transparent;
-	width: clamp(13.75rem, 10.909rem + 14.2vw, 21.563rem);
-	// width: 62px;
+}
+
+.icon--logo {
+	// width: 345px;
+	width: clamp(12.5rem, 9.205rem + 16.48vw, 21.563rem);
+	// min-width: 220px;
 	height: 44px;
 }
 
 .icon--logo-header {
 	fill: var(--white);
-	// width: 345px;
-	// width: clamp(13.75rem, 10.909rem + 14.2vw, 21.563rem);
-	// min-width: 220px;
-	// height: 44px;
 }
 
 .icon--logo-footer {
 	fill: var(--black);
 }
 
-.icon--button-prev {
-	width: 21px;
-	height: 21px;
-	fill: var(--black);
+// .icon--button-prev {
+// 	width: 21px;
+// 	height: 21px;
+// 	fill: var(--black);
 
-}
+// }
 
 
 // .icon--user {

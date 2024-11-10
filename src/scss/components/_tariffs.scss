@@ -18,7 +18,7 @@
 
   &__title {
     border-radius: var(--border-radius);
-    padding: 26px;
+    padding: 26px 5px;
     // width: 589px;
     // height: 100px;
     background-color: var(--brown);
@@ -39,8 +39,6 @@
   &__item {
     list-style-type: disc;
     max-width: 416px;
-    // width: 590px;
-    // height: 360px;
     font-weight: 700;
     font-size: 20px;
     line-height: 130%;
@@ -53,6 +51,7 @@
   }
 
   &__size {
+    padding: 19px 5px;
     border-radius: var(--border-radius);
     max-width: 209px;
     width: 100%;
@@ -66,4 +65,39 @@
   &__btn {
     width: 100%;
   }
+
+  @media screen and (width <=1240px) {
+    &__item {
+      margin-left: 40px;
+    }
+  }
+
+  @media screen and (width <=1024px) {
+    &__inner {
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    &__info {
+      flex-direction: column;
+      align-items: flex-end;
+    }
+
+    &__list {
+      padding: 40px clamp(0.313rem, -0.254rem + 2.83vw, 1.25rem);
+    }
+
+    &__item {
+      margin-left: clamp(1.563rem, 0.996rem + 2.83vw, 2.5rem);
+      max-width: none;
+      width: fit-content;
+      font-size: clamp(1rem, 0.849rem + 0.75vw, 1.25rem);
+    }
+
+    &__title {
+      font-size: clamp(1.375rem, 0.847rem + 2.64vw, 2.25rem);
+    }
+  }
+
+  @media screen and (width <=425px) {}
 }

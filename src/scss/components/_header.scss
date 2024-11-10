@@ -13,13 +13,13 @@
 		margin-left: auto;
 	}
 
-	@media screen and (width <=1200px) {
+	@media screen and (width <=1240px) {
 		&__btn {
 			margin-right: auto;
 		}
 	}
 
-	@media screen and (width <=890px) {
+	@media screen and (width <=1024px) {
 		&__row {
 			justify-content: flex-end;
 			gap: 20px;
@@ -32,7 +32,6 @@
 
 		&__btn {
 			margin-right: 0;
-			margin-left: 172px;
 		}
 
 

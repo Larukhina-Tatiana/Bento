@@ -7,22 +7,27 @@
   max-width: var(--container-width);
   width: 100%;
 
-  &--hero {
+  // &--hero {
 
-    @media screen and (width <=1240px) {
-      max-width: 1000px;
-    }
-
-    @media screen and (width <=1020px) {
-      max-width: 768px;
-    }
-
-    // @media screen and (width <=770px) {
-    //   max-width: 414px;
-    // }
-
+  @media screen and (width <=1240px) {
+    max-width: 1000px;
   }
+
+  @media screen and (width <=1024px) {
+    max-width: 768px;
+  }
+
+  @media screen and (width <=768px) {
+    max-width: 425px;
+  }
+
+  @media screen and (width <=425px) {
+    max-width: 320px;
+  }
+
 }
+
+// }
 
 /* Контейнеры */
 .container-full {
