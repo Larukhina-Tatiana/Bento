@@ -104,6 +104,8 @@
   }
 
   @media screen and (width <=768px) {
+    margin-bottom: 30px;
+
     &__grid {
       display: block;
     }
